@@ -1,8 +1,10 @@
 .header {
   background-color: $primary-color;
-  width: 80%;
   float: right;
+
   &__wrapper {
+    width: 95%;
+    margin: 0 auto;
     padding: 1rem 0;
     color: #fff;
 
@@ -10,11 +12,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-left: 3rem;
 
       .header-schoolyear {
-        line-height: 1rem;
-        font-size: 1rem;
         font-family: "montserratregular";
         span {
           margin-left: 2rem;
@@ -40,6 +39,9 @@
             width: 100%;
             margin: 0 2rem;
             border-radius: 100%;
+          }
+          @media (max-width: 1062px) {
+            width: 20%;
           }
         }
         span {

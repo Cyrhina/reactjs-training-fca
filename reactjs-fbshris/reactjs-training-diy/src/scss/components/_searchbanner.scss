@@ -1,17 +1,16 @@
 .searchbanner {
-  width: 80%;
+  background-color: #fff;
   float: right;
   padding: 1rem 0;
   border: 2px solid $dark-gray;
   &__wrapper {
+    width: 95%;
+    margin: 0 auto;
     display: flex;
     align-items: center;
 
-    label {
+    h1 {
       display: inline;
-      font-size: 2rem;
-      line-height: 2rem;
-      margin-left: 2rem;
       margin-right: 3rem;
       width: 20%;
       font-family: "montserratextrabold";
@@ -20,22 +19,41 @@
       width: 60%;
       padding: 1rem;
       border: 1px solid $light-gray;
-    }
-    button {
-      padding: 0.9rem 1rem;
-      font-size: 1.5rem;
-      line-height: 1.5rem;
-    }
-    .buttoncreatenew {
-      display: flex;
-      align-items: center;
 
+      @media (max-width: 1062px) {
+        margin: 1rem 0;
+        width: 96%;
+      }
+
+      @media (max-width: 1000px) {
+        margin: 1rem 0;
+        width: 95%;
+      }
+
+      @media (max-width: 786px) {
+        margin: 1rem 0;
+        width: 94%;
+      }
+    }
+
+    .buttoncreatenew {
+      margin-left: 2rem;
       button {
-        margin-left: 2rem;
+        a.item-center {
+          display: flex;
+          align-items: center;
+        }
+        @media (max-width: 1062px) {
+          width: 100%;
+          text-align: center;
+        }
       }
-      span {
-        margin-right: 1rem;
+      @media (max-width: 1062px) {
+        margin-left: unset;
       }
+    }
+    @media (max-width: 1062px) {
+      display: block;
     }
   }
 }

@@ -1,11 +1,12 @@
 import React from "react";
+import logo from "../../img/logo-white.png";
 import personone from "../../img/jhonny.png";
 import { FiLogOut } from "react-icons/fi";
 
 const Header = () => {
   return (
     <>
-      <header className="header">
+      <header className="header width88">
         <div className="header__wrapper">
           <div className="header-content">
             <div className="header-schoolyear">

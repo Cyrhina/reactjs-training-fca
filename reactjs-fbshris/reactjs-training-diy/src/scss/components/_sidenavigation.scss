@@ -1,27 +1,75 @@
 .sidenavigation {
   background-color: $primary-color;
-  height: 500vh;
-  width: 20%;
+  height: 100vh;
   &__wrapper {
     .logo {
       background-color: $dark-bg;
+      padding: 1.7rem;
+
       img {
         width: 100%;
-        padding: 0.9rem 9rem;
+      }
+      @media (max-width: 1149px) {
+        display: none;
+      }
+      @media (max-width: 1062px) {
+        display: none;
+      }
+    }
+    .logosolo {
+      padding: 1.7rem 4rem;
+      background-color: $dark-bg;
+      display: none;
+      img {
+        display: none;
+
+        @media (max-width: 1062px) {
+          display: block;
+          background-color: $dark-bg;
+        }
+        @media (max-width: 1050px) {
+          display: block;
+          width: 100%;
+        }
+        @media (max-width: 1062px) {
+          display: block;
+          width: 100%;
+        }
+      }
+      @media (max-width: 1062px) {
+        display: block;
       }
     }
     nav ul li {
       display: flex;
-      align-items: center;
       a {
-        padding: 2rem 2rem 2rem 0;
+        display: flex;
+        align-items: center;
+        font-family: "montserratregular";
+        padding: 2rem 0;
         cursor: pointer;
-        font-size: 2rem;
-        line-height: 2rem;
-        color: #fff;
         span {
-          margin: 0 1rem 0 2rem;
           color: $blue-accent;
+          font-size: 2rem;
+          margin: 0 2rem;
+        }
+        h3 {
+          font-family: "montserratregular";
+          color: #fff;
+          @media (max-width: 1580px) {
+            display: none;
+          }
+          @media (max-width: 1062px) {
+            display: none;
+          }
+        }
+        @media (max-width: 1580px) {
+          width: 100%;
+          justify-content: center;
+        }
+        @media (max-width: 1062px) {
+          width: 100%;
+          justify-content: center;
         }
       }
     }

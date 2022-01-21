@@ -11,7 +11,7 @@ const Student = () => {
     <>
       <Header />
       <Banner />
-      <div className="student-info-box">
+      <div className="student-info-box width88">
         <div className="container95">
           <div className="student-info-box__wrapper">
             <div className="student-info-secondbox">

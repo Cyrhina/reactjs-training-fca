@@ -1,32 +1,31 @@
 import React from "react";
 import logo from "../../img/logo-white.png";
+import logoone from "../../img/logo.png";
 import { AiFillDashboard, AiTwotoneSetting } from "react-icons/ai";
 import { BsFillPersonFill, BsMegaphoneFill } from "react-icons/bs";
 import { IoIosPeople } from "react-icons/io";
-import {
-  FaClipboardList,
-  FaClipboardCheck,
-  FaClipboard,
-  FaUserCog,
-} from "react-icons/fa";
+import { FaClipboardList, FaClipboardCheck, FaUserCog } from "react-icons/fa";
 
 const SideNavigation = () => {
   return (
     <>
-      <div className="sidenavigation">
+      <div className="sidenavigation width12">
         <div className="sidenavigation__wrapper">
           <div className="logo">
             <img src={logo} alt="logo" />
             {/*<h2>fca smis</h2>*/}
           </div>
+          <div className="logosolo">
+            <img src={logoone} alt="logo" />
+          </div>
           <nav>
             <ul>
               <li id="menu-page1">
-                <a href="#">
+                <a href="/">
                   <span>
                     <AiFillDashboard />
                   </span>
-                  Dashboard
+                  <h3>Dashboard</h3>
                 </a>
               </li>
               <li id="menu-page2" className="active">
@@ -34,7 +33,7 @@ const SideNavigation = () => {
                   <span>
                     <BsFillPersonFill />
                   </span>
-                  Student
+                  <h3>Student</h3>
                 </a>
               </li>
               <li id="menu-page3">
@@ -42,7 +41,7 @@ const SideNavigation = () => {
                   <span>
                     <IoIosPeople />
                   </span>
-                  Classes
+                  <h3>Classes</h3>
                 </a>
               </li>
               <li id="menu-page4">
@@ -50,7 +49,7 @@ const SideNavigation = () => {
                   <span>
                     <FaClipboardList />
                   </span>
-                  Subjects
+                  <h3>Subjects</h3>
                 </a>
               </li>
               <li id="menu-page5">
@@ -58,7 +57,7 @@ const SideNavigation = () => {
                   <span>
                     <FaClipboardCheck />
                   </span>
-                  Grades
+                  <h3>Grades</h3>
                 </a>
               </li>
               <li id="menu-page6">
@@ -66,7 +65,7 @@ const SideNavigation = () => {
                   <span>
                     <BsMegaphoneFill />
                   </span>
-                  Announcement
+                  <h3>Announcement</h3>
                 </a>
               </li>
               <li id="menu-page7">
@@ -74,7 +73,7 @@ const SideNavigation = () => {
                   <span>
                     <FaUserCog />
                   </span>
-                  Users
+                  <h3>Users</h3>
                 </a>
               </li>
               <li id="menu-page7">
@@ -82,7 +81,7 @@ const SideNavigation = () => {
                   <span>
                     <AiTwotoneSetting />
                   </span>
-                  Setting
+                  <h3>Setting</h3>
                 </a>
               </li>
             </ul>

@@ -70,6 +70,38 @@
   padding: 2rem;
 }
 
+.seacrchicon {
+  padding: 1rem;
+  border-radius: unset;
+  border: unset;
+}
+
 .t-center {
   text-align: center;
+}
+
+//color
+
+.bg-green {
+  background-color: $green-accent;
+}
+
+.color-green {
+  color: $green-accent;
+}
+
+.color-warning {
+  color: $yellow-warning;
+}
+
+.bg-warning {
+  background-color: $yellow-warning;
+}
+
+.width88 {
+  width: 88%;
+}
+
+.width12 {
+  width: 12%;
 }

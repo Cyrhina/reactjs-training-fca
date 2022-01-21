@@ -1,13 +1,16 @@
 .banner {
-  width: 80%;
+  background-color: #fff;
+  width: 88%;
   float: right;
   padding: 3rem 0;
   border: 2px solid $dark-gray;
 
-  h1 {
-    font-size: 3rem;
-    line-height: 2rem;
-    margin-left: 2rem;
-    font-family: "montserratextrabold";
+  &__wrapper {
+    width: 95%;
+    margin: 0 auto;
+
+    h1 {
+      font-family: "montserratextrabold";
+    }
   }
 }

@@ -5,16 +5,18 @@ import { BsSearch } from "react-icons/bs";
 const SearchBanner = () => {
   return (
     <>
-      <div className="searchbanner">
+      <div className="searchbanner width88">
         <div className="searchbanner__wrapper ">
-          <label>Students</label>
+          <div>
+            <h1>Students</h1>
+          </div>
           <input type="type" placeholder="Search" required />
-          <button>
+          <button className="seacrchicon">
             <BsSearch />
           </button>
-          <div className="buttoncreatenew">
+          <div className="buttoncreatenew ">
             <button>
-              <a href="/Student">
+              <a href="/Student" className="item-center">
                 <span>
                   <AiFillPlusCircle />
                 </span>

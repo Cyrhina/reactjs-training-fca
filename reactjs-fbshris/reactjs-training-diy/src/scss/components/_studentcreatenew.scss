@@ -1,7 +1,10 @@
 .studentlist {
+  background-color: #fff;
   &__wrapper {
     table {
       width: 100%;
+      margin: 0 auto;
+      background-color: #fff;
 
       tr {
         th {
@@ -9,6 +12,7 @@
           background-color: lighten($dark-gray, 10%);
           padding: 2rem;
         }
+
         td {
           border: 1px solid $dark-gray;
         }

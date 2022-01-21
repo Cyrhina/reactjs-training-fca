@@ -13,14 +13,22 @@
   table {
     width: 100%;
   }
-}
-
-.modal-title {
-  background-color: $green-accent;
-  padding: 1rem;
-  color: #fff;
-  display: flex;
-  align-items: center;
+  .modal-title {
+    padding: 1rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      span {
+        margin-right: 5px;
+      }
+    }
+  }
 }
 
 .show {
@@ -55,7 +63,7 @@
     padding: 10px;
     display: flex;
     justify-content: space-between;
-    background: $primary-color;
+    background: $green-accent;
     color: #fff;
     align-items: center;
 
@@ -70,6 +78,7 @@
     pointer-events: all;
     overflow: auto;
     padding: 30px;
+    border-bottom: 1px solid $dark-gray;
   }
 
   .bg--white img.dialogbox,
@@ -78,10 +87,10 @@
     margin: auto;
     display: block;
     font-size: 6rem;
-    svg {
-      fill: lighten($dark-bg, 10%);
-    }
   }
+}
+.modalbody {
+  height: 400px;
 }
 
 // .modal-add-employee .bg--white {
@@ -127,10 +136,6 @@
   background: $light-gray;
 }
 
-.modal .modal-title {
-  display: inline-block;
-}
-
 .modal .upload-container {
   display: flex;
   align-items: center;
@@ -174,13 +179,14 @@
 .button-container {
   display: flex;
   // justify-content: center;
-  justify-content: space-around;
+  justify-content: flex-end;
+  margin: 1rem;
   @media (max-width: 500px) {
     flex-direction: column;
   }
-  // button {
-  //   flex: 1;
-  // }
+  button {
+    margin-right: 1rem;
+  }
 }
 
 .modal .content-box {
