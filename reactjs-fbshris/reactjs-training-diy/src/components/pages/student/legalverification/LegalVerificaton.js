@@ -4,11 +4,6 @@ import { BiMemoryCard } from "react-icons/bi";
 const LegalVerificaton = () => {
   return (
     <>
-      <input type="radio" name="tabs" id="tab-3" />
-      <label htmlFor="tab-3" className="menu-label">
-        <span className="active">Legal Verification</span>
-      </label>
-
       <div className="tab">
         <div className="studentbanner">
           <h2>Legal Verification</h2>

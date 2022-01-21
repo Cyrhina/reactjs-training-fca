@@ -7,11 +7,6 @@ import Banner from "../../../banner/Banner";
 const StudentInfo = () => {
   return (
     <>
-      <input type="radio" name="tabs" id="tab-1" defaultChecked />
-      <label htmlFor="tab-1" className="menu-label">
-        <span>Student Info</span>
-      </label>
-
       <div className="tab">
         <div className="studentbanner">
           <h2>Student Information</h2>

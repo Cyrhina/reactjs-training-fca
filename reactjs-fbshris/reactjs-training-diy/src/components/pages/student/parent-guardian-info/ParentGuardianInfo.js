@@ -6,11 +6,6 @@ import { FaCaretDown, FaCog } from "react-icons/fa";
 const ParentGuardianInfo = () => {
   return (
     <>
-      <input type="radio" name="tabs" id="tab-2" defaultChecked />
-      <label htmlFor="tab-2" className="menu-label">
-        <span>Parent/Guardian Info</span>
-      </label>
-
       <div className="tab">
         <div className="studentbanner">
           <h2>Parent or Guardian Information</h2>

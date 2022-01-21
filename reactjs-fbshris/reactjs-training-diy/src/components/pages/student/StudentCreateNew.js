@@ -3,11 +3,13 @@ import { FaCaretDown, FaCog } from "react-icons/fa";
 import SearchBanner from "../../banner/SearchBanner";
 import Header from "../../header/Header";
 import SideNavigation from "../../sidenavigation/SideNavigation";
+import ModalSuccess from "../../widget/ModalSuccess";
 import Spinner from "../../widget/Spinner";
 
 const StudentCreateNew = () => {
   return (
     <>
+      <ModalSuccess />
       <Header />
       <SearchBanner />
       <div className="student-info-box">

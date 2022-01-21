@@ -16,8 +16,22 @@ const Student = () => {
           <div className="student-info-box__wrapper">
             <div className="student-info-secondbox">
               <div className="tab-menu">
+                <input type="radio" name="tabs" id="tab-1" defaultChecked />
+                <label htmlFor="tab-1" className="menu-label">
+                  <span>Student Info</span>
+                </label>
                 <StudentInfo />
+
+                <input type="radio" name="tabs" id="tab-2" />
+                <label htmlFor="tab-2" className="menu-label">
+                  <span>Parent/Guardian Info</span>
+                </label>
                 <ParentGuardianInfo />
+
+                <input type="radio" name="tabs" id="tab-3" />
+                <label htmlFor="tab-3" className="menu-label">
+                  <span className="active">Legal Verification</span>
+                </label>
                 <LegalVerificaton />
               </div>
             </div>
