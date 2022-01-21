@@ -1,0 +1,223 @@
+.modal {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 99;
+  overflow-y: hidden;
+
+  table {
+    width: 100%;
+  }
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.modal .display-center {
+  background: #ffffff;
+  // border-radius: 0.5em;
+  box-shadow: 0 10px 20px rgba(black, 0.2);
+  left: 50%;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  text-align: left;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  z-index: 999999;
+
+  @media (max-width: 500px) {
+    width: 90%;
+  }
+
+  .title-container {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background: $primary-color;
+    color: #fff;
+    align-items: center;
+
+    span {
+      color: #fff !important;
+      padding: 3px 0;
+      display: inline-block;
+    }
+  }
+
+  .bg--white {
+    pointer-events: all;
+    overflow: auto;
+    padding: 30px;
+  }
+
+  .bg--white img.dialogbox,
+  .bg--white div.dialogbox {
+    width: 62px;
+    margin: auto;
+    display: block;
+    font-size: 6rem;
+    svg {
+      fill: lighten($dark-bg, 10%);
+    }
+  }
+}
+
+// .modal-add-employee .bg--white {
+//   overflow: inherit !important;
+// }
+
+.modal .display-wide {
+  width: 900px;
+  // width: 70%;
+
+  @media (max-width: 850px) {
+    width: 90%;
+  }
+}
+
+.modal .display-radio {
+  input[type="radio"] {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+
+.modal .btn--close {
+  background: transparent;
+}
+
+.modal .btn--close svg {
+  width: 25px;
+  height: 25px;
+  float: right;
+  position: relative;
+  z-index: 10;
+  padding: 5px;
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background: #bbb;
+  pointer-events: all;
+}
+
+.modal .btn--close svg:hover {
+  background: $light-gray;
+}
+
+.modal .modal-title {
+  display: inline-block;
+}
+
+.modal .upload-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.modal #upload {
+  position: absolute;
+  top: 8px;
+  left: 5px;
+  font-size: 1.2rem;
+}
+
+.modal .button-wrap {
+  position: relative;
+  height: 36px;
+  display: flex;
+  align-items: center;
+}
+
+.modal .upload-button {
+  display: flex;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #ddd;
+  position: absolute;
+  z-index: 1;
+  border: 1px solid #ddd;
+}
+
+.modal .upload-button img {
+  width: 12px;
+}
+
+.modal .button-wrap input[type="file"] {
+  margin-left: 28px;
+}
+
+.button-container {
+  display: flex;
+  // justify-content: center;
+  justify-content: space-around;
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
+  // button {
+  //   flex: 1;
+  // }
+}
+
+.modal .content-box {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.justify-content {
+  justify-content: center;
+}
+
+.justify-right {
+  justify-content: right;
+}
+
+.button-container {
+  span {
+    position: relative;
+  }
+  .d-flex {
+    margin: 0 10px;
+  }
+  .content-box {
+    flex: 1;
+  }
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  input[type="radio"] {
+    display: inline-block;
+    margin: 0 2px;
+  }
+  input[type="radio"]:checked + label {
+    border-top: none;
+  }
+}
+
+.d-flex-space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-front {
+  z-index: 100;
+}

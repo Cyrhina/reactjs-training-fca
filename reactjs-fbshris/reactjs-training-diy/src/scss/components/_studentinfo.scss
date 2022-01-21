@@ -1,0 +1,104 @@
+form {
+  .student-tab {
+    text-align: center;
+    .student-profile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      img {
+        width: 10%;
+        border-radius: 100%;
+        border: 1rem solid $light-gray;
+      }
+
+      span {
+        font-size: 2rem;
+        padding: 1rem;
+        color: #fff;
+        background-color: $blue-accent;
+        border-radius: 100%;
+        position: absolute;
+        left: calc(50% + 20px);
+        top: 60%;
+      }
+    }
+
+    h3 {
+      margin-top: 1rem;
+      color: darken($dark-gray, 30%);
+    }
+  }
+  .student-input {
+    padding: 1rem 0;
+    &__wrapper {
+      margin: 0 15rem;
+
+      h2 {
+        margin: 2rem 0 3rem 0;
+        font-size: 3rem;
+        line-height: 3rem;
+        text-transform: uppercase;
+      }
+      .inputform {
+        .inputname {
+          label {
+            font-size: 2rem;
+          }
+        }
+        .input {
+          margin: 2rem 0;
+          input {
+            padding: 2rem;
+            font-size: 2rem;
+            line-height: 2rem;
+            width: 100%;
+          }
+          select {
+            padding: 2rem;
+            font-size: 2rem;
+            line-height: 2rem;
+            width: 100%;
+          }
+        }
+        .inputgender {
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+          input {
+            margin-right: 2rem;
+          }
+          label {
+            margin-right: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.seperation-line {
+  background-color: $dark-gray;
+  padding: 5px;
+  margin: unset;
+}
+
+.studentinfo-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  button {
+    display: flex;
+    align-items: center;
+    padding: 1rem 5rem;
+    text-align: center;
+    background-color: $green-accent;
+    color: #fff;
+    border: 1px solid $green-accent;
+
+    span.margin-r-1rem {
+      margin-right: 1rem;
+    }
+  }
+}

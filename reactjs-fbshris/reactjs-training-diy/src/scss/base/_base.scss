@@ -1,0 +1,22 @@
+a {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+html {
+  font-size: 62.5% !important;
+  font-family: "montserratregular";
+  font-weight: 400;
+}
+
+body {
+  font-size: 1.5rem !important;
+  line-height: 1.5rem !important;
+}
+
+button {
+  background-color: $green-accent;
+  border: 1px solid #fff;
+  font-size: 2rem;
+  line-height: 2rem;
+}

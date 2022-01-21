@@ -1,0 +1,23 @@
+@import "./abstracts/variables";
+@import "./abstracts/helper";
+
+@import "./base/reset";
+@import "./base/typography";
+@import "./base/base";
+
+@import "./components/header";
+@import "./components/sidenavigation";
+@import "./components/banner";
+@import "./components/searchbanner";
+@import "./components/tab-menu";
+@import "./components/studentinfo";
+@import "./components/dropdown";
+@import "./components/popup";
+@import "./components/spinner";
+@import "./components/legalverification";
+@import "./components/parentgardianinfo";
+@import "./components/studentcreatenew";
+
+@import "./layout/grid";
+
+@import "./pages/student";

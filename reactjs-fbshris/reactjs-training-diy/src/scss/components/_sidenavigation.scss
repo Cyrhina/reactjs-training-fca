@@ -1,0 +1,36 @@
+.sidenavigation {
+  background-color: $primary-color;
+  height: 500vh;
+  width: 20%;
+  &__wrapper {
+    .logo {
+      background-color: $dark-bg;
+      img {
+        width: 100%;
+        padding: 0.9rem 9rem;
+      }
+    }
+    nav ul li {
+      display: flex;
+      align-items: center;
+      a {
+        padding: 2rem 2rem 2rem 0;
+        cursor: pointer;
+        font-size: 2rem;
+        line-height: 2rem;
+        color: #fff;
+        span {
+          margin: 0 1rem 0 2rem;
+          color: $blue-accent;
+        }
+      }
+    }
+    .active {
+      background-color: $light-bg;
+      border-left: 3px solid #fff;
+    }
+    nav ul li:hover {
+      background-color: $light-bg;
+    }
+  }
+}

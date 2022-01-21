@@ -1,0 +1,53 @@
+.header {
+  background-color: $primary-color;
+  width: 80%;
+  float: right;
+  &__wrapper {
+    padding: 1rem 0;
+    color: #fff;
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: 3rem;
+
+      .header-schoolyear {
+        line-height: 1rem;
+        font-size: 1rem;
+        font-family: "montserratregular";
+        span {
+          margin-left: 2rem;
+          font-family: "montserratextrabold";
+        }
+      }
+      .header-profile {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        h2 {
+          font-size: 1.5rem;
+          line-height: 1.5rem;
+        }
+        h3 {
+          font-size: 1.5rem;
+          text-align: right;
+        }
+
+        .personal-img {
+          width: 15%;
+          img {
+            width: 100%;
+            margin: 0 2rem;
+            border-radius: 100%;
+          }
+        }
+        span {
+          font-size: 2rem;
+          font-family: "montserratextrabold";
+          margin: 0 3rem;
+        }
+      }
+    }
+  }
+}

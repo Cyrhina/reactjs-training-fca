@@ -1,0 +1,23 @@
+.legalinformation {
+  margin: 0 15rem;
+
+  form {
+    p {
+      font-size: 2rem;
+      line-height: 2.5rem;
+      color: lighten(black, 30%);
+    }
+    h2 {
+      margin-top: 2rem;
+      font-family: "montserratextrabold";
+    }
+    &__wrapper {
+      margin-top: 2rem;
+    }
+    .legalinfo {
+      margin-top: 2rem;
+      line-height: 2.5rem;
+      color: lighten(black, 50%);
+    }
+  }
+}

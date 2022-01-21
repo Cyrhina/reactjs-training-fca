@@ -1,0 +1,22 @@
+.student-info-box {
+  width: 80%;
+  float: right;
+  height: 100%;
+  padding: 3rem 0;
+  background-color: $light-gray;
+
+  &__wrapper {
+    background-color: #fff;
+    border: 2px solid $dark-gray;
+    border-radius: 5px;
+  }
+
+  .student-info-secondbox {
+    background-color: #fff;
+    box-shadow: 2px 2px 9px 9px $dark-gray;
+    margin: 2rem 2rem;
+  }
+  .student-button {
+    padding: 2rem;
+  }
+}

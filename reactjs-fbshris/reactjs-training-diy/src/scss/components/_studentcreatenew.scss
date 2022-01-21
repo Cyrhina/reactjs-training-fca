@@ -1,0 +1,18 @@
+.studentlist {
+  &__wrapper {
+    table {
+      width: 100%;
+
+      tr {
+        th {
+          border: 1px solid $dark-gray;
+          background-color: lighten($dark-gray, 10%);
+          padding: 2rem;
+        }
+        td {
+          border: 1px solid $dark-gray;
+        }
+      }
+    }
+  }
+}
