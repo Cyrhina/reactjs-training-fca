@@ -6,7 +6,7 @@ const LegalVerificaton = () => {
     <>
       <div className="tab">
         <div className="studentbanner">
-          <h2>Legal Verification</h2>
+          <h5>Legal Verification</h5>
         </div>
         <div className="legalinformation">
           <form>
@@ -31,13 +31,13 @@ const LegalVerificaton = () => {
                 </label>
               </div>
 
-              <div className="inputform bottom margin-left10 legalinfo">
+              <div className="inputform bottom">
                 <div className="inputgender">
-                  <label className="inputgender  margin-left10">
+                  <label className="inputgender light-color">
                     <input type="radio" name="docu-copy" />
                     Original
                   </label>
-                  <label className="inputgender  margin-left10">
+                  <label className="inputgender light-color">
                     <input type="radio" name="docu-copy" />
                     Photocopy
                   </label>
@@ -92,7 +92,7 @@ const LegalVerificaton = () => {
                   <textarea
                     name=""
                     id=""
-                    cols="140"
+                    cols="50"
                     rows="10"
                     required
                   ></textarea>
@@ -107,7 +107,7 @@ const LegalVerificaton = () => {
                   <textarea
                     name=""
                     id=""
-                    cols="140"
+                    cols="50"
                     rows="10"
                     required
                   ></textarea>

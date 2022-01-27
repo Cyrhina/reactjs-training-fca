@@ -1,84 +1,107 @@
 .sidenavigation {
   background-color: $primary-color;
-  height: 100vh;
   &__wrapper {
+    font-size: 1.4rem;
     .logo {
       background-color: $dark-bg;
-      padding: 1.7rem;
-
+      padding: 1.5rem;
       img {
-        width: 100%;
+        width: 23rem;
+      display: block;
+      margin: 0 auto;
       }
-      @media (max-width: 1149px) {
-        display: none;
+      @media (max-width: 1440px) {
+        padding: 2.1rem;
       }
-      @media (max-width: 1062px) {
+      @media (max-width: 1148px) {
         display: none;
       }
     }
     .logosolo {
-      padding: 1.7rem 4rem;
-      background-color: $dark-bg;
       display: none;
+      background-color: $dark-bg;
       img {
-        display: none;
-
-        @media (max-width: 1062px) {
-          display: block;
-          background-color: $dark-bg;
-        }
-        @media (max-width: 1050px) {
-          display: block;
-          width: 100%;
-        }
-        @media (max-width: 1062px) {
-          display: block;
-          width: 100%;
-        }
-      }
-      @media (max-width: 1062px) {
+        width: 9.8rem;
+        padding: 2rem;
+      display: none;
+      margin: 0 auto;
+      @media (max-width: 1149px) {
         display: block;
+      }
+      @media (max-width: 768px) {
+        padding: 0.9rem;
+      }
+      }
+      @media (max-width: 1149px) {
+        display: block;
+      }
+      @media (max-width: 590px) {
+        display: none;
       }
     }
     nav ul li {
-      display: flex;
       a {
         display: flex;
         align-items: center;
         font-family: "montserratregular";
         padding: 2rem 0;
         cursor: pointer;
+        font-size: 1.4rem;
         span {
           color: $blue-accent;
-          font-size: 2rem;
           margin: 0 2rem;
         }
         h3 {
+          font-size: 1.4rem;
           font-family: "montserratregular";
-          color: #fff;
-          @media (max-width: 1580px) {
+          color: $white;
+          @media (max-width: 1290px) {
             display: none;
           }
-          @media (max-width: 1062px) {
-            display: none;
+          @media (max-width: 426px) {
+            display: block;
           }
         }
-        @media (max-width: 1580px) {
-          width: 100%;
+        @media (max-width: 1290px) {
+          font-size: 1.8rem;
           justify-content: center;
-        }
-        @media (max-width: 1062px) {
           width: 100%;
-          justify-content: center;
         }
+       
+       @media (max-width: 426px) {
+         justify-content: unset;
+         width: unset;
       }
+      }
+       
     }
     .active {
       background-color: $light-bg;
-      border-left: 3px solid #fff;
+      border-left: 3px solid $white;
     }
     nav ul li:hover {
       background-color: $light-bg;
     }
   }
+  @media (max-width: 426px) {
+    display: block;
+    position: unset;
+}
+}
+
+.hide-nav{
+  @media (max-width: 590px) {
+    display: none;
+}
+}
+.hide-nav-header{
+  display: none;
+  
+@media (max-width: 425px) {
+  display: block;
+  min-height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 999999;
+}
 }

@@ -17,7 +17,7 @@
       color: $light-gray;
     }
     span svg {
-      fill: #fff;
+      fill: $white;
     }
   }
 
@@ -56,13 +56,12 @@
       background: #ddd;
     }
 
-    p a,
     p button {
       padding: 10px 8px;
       margin: 0;
       display: block;
       color: #3a3b36;
-      background: #fff;
+      background: $white;
       text-align: center;
       width: 100%;
       &:hover {

@@ -1,17 +1,21 @@
 .addform {
   .inputaddform {
-    .inputnewstudent {
-      input {
-        width: 100%;
-        padding: 1rem;
-        margin-bottom: 1rem;
-      }
-    }
     .inputaddname {
       margin: 1rem 0;
       label {
         margin-right: 1rem;
       }
     }
+    .input{
+      input{
+        margin-bottom: 1rem;
+      }
+    }
+    .select-grade{
+      select{
+        margin-bottom: 1rem;
+      }
+    }
+    
   }
 }

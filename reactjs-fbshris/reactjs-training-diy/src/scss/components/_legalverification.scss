@@ -3,9 +3,10 @@
 
   form {
     p {
-      font-size: 2rem;
-      line-height: 2.5rem;
+      font-size: 1.4rem;
+      line-height: 2rem;
       color: lighten(black, 30%);
+      
     }
     h2 {
       margin-top: 2rem;
@@ -18,6 +19,24 @@
       margin-top: 2rem;
       line-height: 2.5rem;
       color: lighten(black, 50%);
+
+      label{
+        input{
+          width:unset;
+        }
+      }
     }
   }
+  @media (max-width: 999px) {
+    margin: 0 10rem;
+  }
+  
+  @media (max-width: 414px) {
+    margin: 0 2.5rem;
+  }
+}
+
+
+.light-color{
+  color: lighten(black, 50%);
 }

@@ -2,20 +2,21 @@ import React from "react";
 import personone from "../../../../img/jhonny.png";
 import { AiFillCamera } from "react-icons/ai";
 import { BiMemoryCard } from "react-icons/bi";
-import Banner from "../../../banner/Banner";
 
 const StudentInfo = () => {
   return (
     <>
       <div className="tab">
         <div className="studentbanner">
-          <h2>Student Information</h2>
+          <h5>Student Information</h5>
         </div>
         <form>
           <div className="student-tab">
             <h2>Profile Image</h2>
             <div className="student-profile">
+              <div className="profile-img">
               <img src={personone} alt="profile-picture" />
+              </div>
               <span>
                 <AiFillCamera />
               </span>
@@ -331,7 +332,7 @@ const StudentInfo = () => {
                   <textarea
                     name=""
                     id=""
-                    cols="140"
+                    cols="50"
                     rows="10"
                     required
                   ></textarea>

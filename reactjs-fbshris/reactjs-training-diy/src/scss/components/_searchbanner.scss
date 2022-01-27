@@ -1,12 +1,38 @@
+.banner {
+  background-color: $white;
+  float: right;
+  padding: 3rem 0;
+  border: 2px solid $dark-gray;
+
+  &__wrapper {
+    width: 95%;
+    margin: 0 auto;
+
+    h1 {
+      font-size: 1.8rem;
+      font-family: "montserratextrabold";
+@media (max-width: 414px) {
+  font-size: 1rem;
+}
+    }
+  }
+  @media (max-width: 414px) {
+    padding: 1rem 0;
+  }
+}
+
+  
 .searchbanner {
-  background-color: #fff;
+  background-color: $white;
   float: right;
   padding: 1rem 0;
   border: 2px solid $dark-gray;
+
   &__wrapper {
     width: 95%;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 
     h1 {
@@ -16,36 +42,24 @@
       font-family: "montserratextrabold";
     }
     input {
-      width: 60%;
-      padding: 1rem;
+      width: 100%;
       border: 1px solid $light-gray;
-
-      @media (max-width: 1062px) {
-        margin: 1rem 0;
-        width: 96%;
-      }
-
-      @media (max-width: 1000px) {
-        margin: 1rem 0;
-        width: 95%;
-      }
-
-      @media (max-width: 786px) {
-        margin: 1rem 0;
-        width: 94%;
-      }
     }
 
     .buttoncreatenew {
-      margin-left: 2rem;
+      margin-left: 1rem;
       button {
-        a.item-center {
+        .item-center {
           display: flex;
           align-items: center;
+          justify-content: center;
+
+          span{
+            margin-right: 5px;
+          }
         }
         @media (max-width: 1062px) {
           width: 100%;
-          text-align: center;
         }
       }
       @media (max-width: 1062px) {
@@ -54,6 +68,119 @@
     }
     @media (max-width: 1062px) {
       display: block;
+      
     }
   }
+}
+
+
+.searchbar-box{
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+ .search-recomen {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  vertical-align: middle;
+  line-height: 1rem;
+  min-width: 100%;
+  border: 1px solid $light-gray;
+
+    span i {
+      color: $light-gray;
+    }
+    span svg {
+      fill: $white;
+    }
+  
+  span i,
+  span svg {
+    margin: 0 3px;
+    font-size: 15px;
+  }
+
+  .search-recomen-change {
+    height: 30px;
+    display: inline-block;
+    position: fixed;
+    width: 30px;
+    left: 0;
+    top: 0;
+    text-align: center;
+    padding: 6px 5px;
+  }
+  .search-recomen-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 1;
+    right: 0;
+
+    &:hover {
+      background: $light-bg;
+    }
+    p {
+      margin: 0;
+    }
+
+    p:hover {
+      background: #ddd;
+    }
+
+    p option {
+      padding: 10px 8px;
+      margin: 0;
+      display: block;
+      color: #3a3b36;
+      background: $white;
+      text-align: center;
+      width: 100%;
+      &:hover {
+        background: #e0e0e0;
+      }
+    }
+  }
+}
+
+  @media (max-width: 1062px) {
+    margin-bottom: 0.5rem;
+    width: 96%;
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 0.5rem;
+    width: 94%;
+  }
+
+  @media (max-width: 691px) {
+    margin-bottom: 0.5rem;
+    width: 93%;
+  }
+
+  @media (max-width: 468px) {
+    margin-bottom: 0.5rem;
+    width: 92%;
+  }
+  
+
+}
+.search-recomen:hover .search-recomen-content,
+.search-recomen:active .search-recomen-content {
+  display: block;
+}
+
+.search-recomen-select {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  text-align: right;
+  border-radius: 5px;
+  vertical-align: middle;
+  line-height: 1rem;
 }

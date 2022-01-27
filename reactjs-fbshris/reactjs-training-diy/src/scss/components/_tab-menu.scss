@@ -8,10 +8,10 @@
     margin-right: 0.2rem;
     cursor: pointer;
     background: $primary-color;
-    color: #fff;
+    color: $white;
     font-weight: bold;
     transition: background ease 0.2s;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     border-top: 2px solid $primary-color;
     position: relative;
     text-transform: uppercase;
@@ -19,8 +19,8 @@
 
   a,
   .menu-label:hover {
-    background: #fff;
-    color: $green-accent;
+    background: $green-accent;
+    color: #fff;
   }
 
   .tab {
@@ -29,7 +29,15 @@
     width: 100%;
     display: none;
     padding: 30px;
-    background: #fff;
+    background: $white;
+    
+  @media (max-width: 414px) {
+    padding: unset;
+    
+  }
+  h5{
+    font-family: "montserratextrabold";
+  }
   }
 
   input[type="radio"] {
@@ -43,8 +51,8 @@
   }
 
   input[type="radio"]:checked + label {
-    background: #fff;
-    color: $dark-bg;
+    background: $green-accent;
+    color: black;
     border-top: 2px solid $dark-bg;
   }
 
@@ -55,7 +63,7 @@
   .badge {
     background: red;
     font-size: 1rem;
-    color: #fff;
+    color: $white;
     padding: 1px;
     border-radius: 10px;
     width: 18px;
@@ -83,7 +91,7 @@
     }
     input[type="radio"]:checked + label {
       background: $dark-bg;
-      color: #ffffff;
+      color: $white;
     }
   }
 }

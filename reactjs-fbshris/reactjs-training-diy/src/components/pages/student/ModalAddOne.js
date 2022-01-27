@@ -4,7 +4,7 @@ import { AiFillCheckCircle, AiOutlineClose } from "react-icons/ai";
 const ModalAddOne = () => {
   return (
     <>
-      <div className="modal modal-front">
+      <div className="modal modal--front">
         <div className="display-center">
           <div className="modal-title bg-green">
             <div className="modal-title__wrapper">
@@ -76,8 +76,8 @@ const ModalAddOne = () => {
           </div>
           <div>
             <div className="button-container">
-              <button className="btn bg-green">Add</button>
-              <button className="btn bg-green">Cancel</button>
+              <button className="bg-green padding1rem">Add</button>
+              <button className="bg-light-gray padding1rem">Cancel</button>
             </div>
           </div>
         </div>

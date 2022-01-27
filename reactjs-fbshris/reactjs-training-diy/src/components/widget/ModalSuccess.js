@@ -4,7 +4,7 @@ import { AiFillCheckCircle } from "react-icons/ai";
 const ModalSuccess = () => {
   return (
     <>
-      <div className="modal modal-front">
+      <div className="modal ">
         <div className="display-center">
           <div className="modal-title bg-green">
             <div className="modal-title__wrapper">
@@ -23,7 +23,7 @@ const ModalSuccess = () => {
             </h4>
           </div>
           <div className="button-container">
-            <button className="btn bg-green">Okey</button>
+            <button className="btn bg-green padding1rem">Okey</button>
           </div>
         </div>
       </div>

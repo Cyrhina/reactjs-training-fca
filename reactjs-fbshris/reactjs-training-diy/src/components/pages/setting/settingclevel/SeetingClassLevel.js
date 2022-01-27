@@ -1,26 +1,33 @@
-import React from "react";
-import { FaCaretDown, FaCog } from "react-icons/fa";
-import SearchBanner from "../../banner/SearchBanner";
-import Header from "../../header/Header";
-import SideNavigation from "../../sidenavigation/SideNavigation";
-import ModalConfirm from "../../widget/ModalConfirm";
-import ModalSuccess from "../../widget/ModalSuccess";
-import Spinner from "../../widget/Spinner";
-import SpinnerButton from "../../widget/SpinnerButton";
 
-const StudentCreateNew = () => {
+import React from "react";
+import { AiFillPlusCircle } from "react-icons/ai";
+import { FaCaretDown, FaCog } from "react-icons/fa";
+import Header from "../../../header/Header";
+import SideNavigation from "../../../sidenavigation/SideNavigation";
+
+const SettingClassLevel = () => {
   return (
     <>
-      <Header />
-      
+    <Header />
       <div className="searchbanner width88">
         <div className="searchbanner__wrapper ">
           <div>
-            <h1>Students</h1>
+            <h1>Classes</h1>
           </div>
-      <SearchBanner />
-        </div>
+          
+          <div className="buttoncreatenew ">
+            <button>
+              <a href="/Student" className="item-center">
+                <span>
+                  <AiFillPlusCircle />
+                </span>
+                <span>Create New</span>
+              </a>
+            </button>
+          </div>
       </div>
+      </div>
+
       <div className="student-info-box width88 ">
         <div className="container95">
           <div className="student-info-box__wrapper">
@@ -29,22 +36,17 @@ const StudentCreateNew = () => {
                   <table>
                     <tr>
                       <th>#</th>
-                      <th className="td-block">Enrollment Status</th>
-                      <th className="td-block">Learner Ref. No.</th>
-                      <th>Last Name</th>
-                      <th className="td-block-fn">First Name</th>
-                      <th className="td-block">Grade Name</th>
-                      <th className="td-block">Reg. Date tname</th>
+                      <th >Section</th>
+                      <th >Class Level ID</th>
+                      <th className="td-block-fn">Status</th>
                       <th>Action</th>
                     </tr>
-                    <tr className="red-critical">
+
+                    <tr>
                       <td>1</td>
-                      <td className="td-block">Temporary</td>
-                      <td className="td-block"></td>
-                      <td>Ubeda</td>
-                      <td className="td-block-fn">Alxander</td>
-                      <td className="td-block">N/A</td>
-                      <td className="td-block">62021-12-02</td>
+                      <td >A</td>
+                      <td >Grade 1</td>
+                      <td className="td-block-fn">Active</td>
                       <td className="t-center">
                         <div className="dropdown">
                           <span>
@@ -52,28 +54,23 @@ const StudentCreateNew = () => {
                             <FaCaretDown />
                           </span>
                           <div className="dropdown-content">
-                            <p>
-                              <button><a href="#">View</a></button>
-                            </p>
+                            <p><button><a href="/ClassesView">View</a></button></p>
                             <p>
                               <button><a href="#">Edit</a></button>
                             </p>
                             <p>
-                              <button><a href="#">View Grade</a></button>
+                              <button><a href="#">Archieve</a></button>
                             </p>
                           </div>
                         </div>
                       </td>
                     </tr>
 
-                    <tr className="red-critical">
+                    <tr>
                       <td>2</td>
-                      <td className="td-block">Temporary</td>
-                      <td className="td-block"></td>
-                      <td>Mendoza</td>
-                      <td className="td-block-fn">Dhan Joseph</td>
-                      <td className="td-block">N/A</td>
-                      <td className="td-block">2021-11-02</td>
+                      <td >A</td>
+                      <td >Grade 2</td>
+                      <td className="td-block-fn">Active</td>
                       <td className="t-center">
                         <div className="dropdown">
                           <span>
@@ -81,28 +78,23 @@ const StudentCreateNew = () => {
                             <FaCaretDown />
                           </span>
                           <div className="dropdown-content">
-                            <p>
-                              <button><a href="#">View</a></button>
-                            </p>
+                            <p><button><a href="/ClassesView">View</a></button></p>
                             <p>
                               <button><a href="#">Edit</a></button>
                             </p>
                             <p>
-                              <button><a href="#">View Grade</a></button>
+                              <button><a href="#">Archieve</a></button>
                             </p>
                           </div>
                         </div>
                       </td>
                     </tr>
 
-                    <tr className="bg-lightenblack ">
+                    <tr>
                       <td>3</td>
-                      <td className="td-block">Temporary</td>
-                      <td className="td-block">4280017150035</td>
-                      <td>Del Monte</td>
-                      <td className="td-block-fn">Rain Luke</td>
-                      <td className="td-block">N/A</td>
-                      <td className="td-block">2021-11-02</td>
+                      <td >A</td>
+                      <td >Grade 2</td>
+                      <td className="td-block-fn">Active</td>
                       <td className="t-center">
                         <div className="dropdown">
                           <span>
@@ -110,14 +102,12 @@ const StudentCreateNew = () => {
                             <FaCaretDown />
                           </span>
                           <div className="dropdown-content">
-                            <p>
-                              <button><a href="#">View</a></button>
-                            </p>
+                            <p><button><a href="/ClassesView">View</a></button></p>
                             <p>
                               <button><a href="#">Edit</a></button>
                             </p>
                             <p>
-                              <button><a href="#">View Grade</a></button>
+                              <button><a href="#">Archieve</a></button>
                             </p>
                           </div>
                         </div>
@@ -126,12 +116,9 @@ const StudentCreateNew = () => {
 
                     <tr>
                       <td>4</td>
-                      <td className="td-block">Temporary</td>
-                      <td className="td-block">4280017150035</td>
-                      <td>Del Monte</td>
-                      <td className="td-block-fn">Rain Luke</td>
-                      <td className="td-block">N/A</td>
-                      <td className="td-block">2021-11-02</td>
+                      <td >A</td>
+                      <td >Grade 2</td>
+                      <td className="td-block-fn">Active</td>
                       <td className="t-center">
                         <div className="dropdown">
                           <span>
@@ -139,14 +126,12 @@ const StudentCreateNew = () => {
                             <FaCaretDown />
                           </span>
                           <div className="dropdown-content">
-                            <p>
-                              <button><a href="#">View</a></button>
-                            </p>
+                            <p><button><a href="/ClassesView">View</a></button></p>
                             <p>
                               <button><a href="#">Edit</a></button>
                             </p>
                             <p>
-                              <button><a href="#">View Grade</a></button>
+                              <button><a href="#">Archieve</a></button>
                             </p>
                           </div>
                         </div>
@@ -155,12 +140,9 @@ const StudentCreateNew = () => {
 
                     <tr>
                       <td>5</td>
-                      <td className="td-block">Temporary</td>
-                      <td className="td-block">4280017150035</td>
-                      <td>Del Monte</td>
-                      <td className="td-block-fn">Rain Luke</td>
-                      <td className="td-block">N/A</td>
-                      <td className="td-block">2021-11-02</td>
+                      <td >A</td>
+                      <td >Grade 2</td>
+                      <td className="td-block-fn">Active</td>
                       <td className="t-center">
                         <div className="dropdown">
                           <span>
@@ -168,14 +150,12 @@ const StudentCreateNew = () => {
                             <FaCaretDown />
                           </span>
                           <div className="dropdown-content">
-                            <p>
-                              <button><a href="#">View</a></button>
-                            </p>
+                            <p><button><a href="/ClassesView">View</a></button></p>
                             <p>
                               <button><a href="#">Edit</a></button>
                             </p>
                             <p>
-                              <button><a href="#">View Grade</a></button>
+                              <button><a href="#">Archieve</a></button>
                             </p>
                           </div>
                         </div>
@@ -184,12 +164,9 @@ const StudentCreateNew = () => {
 
                     <tr>
                       <td>6</td>
-                      <td className="td-block">Temporary</td>
-                      <td className="td-block">4280017150035</td>
-                      <td>Del Monte</td>
-                      <td className="td-block-fn">Rain Luke</td>
-                      <td className="td-block">N/A</td>
-                      <td className="td-block">2021-11-02</td>
+                      <td >A</td>
+                      <td >Grade 2</td>
+                      <td className="td-block-fn">Active</td>
                       <td className="t-center">
                         <div className="dropdown">
                           <span>
@@ -197,14 +174,12 @@ const StudentCreateNew = () => {
                             <FaCaretDown />
                           </span>
                           <div className="dropdown-content">
-                            <p>
-                              <button><a href="#">View</a></button>
-                            </p>
+                            <p><button><a href="/ClassesView">View</a></button></p>
                             <p>
                               <button><a href="#">Edit</a></button>
                             </p>
                             <p>
-                              <button><a href="#">View Grade</a></button>
+                              <button><a href="#">Archieve</a></button>
                             </p>
                           </div>
                         </div>
@@ -213,12 +188,9 @@ const StudentCreateNew = () => {
 
                     <tr>
                       <td>7</td>
-                      <td className="td-block">Temporary</td>
-                      <td className="td-block">4280017150035</td>
-                      <td>Del Monte</td>
-                      <td className="td-block-fn">Rain Luke</td>
-                      <td className="td-block">N/A</td>
-                      <td className="td-block">2021-11-02</td>
+                      <td >A</td>
+                      <td >Grade 2</td>
+                      <td className="td-block-fn">Active</td>
                       <td className="t-center">
                         <div className="dropdown">
                           <span>
@@ -226,14 +198,12 @@ const StudentCreateNew = () => {
                             <FaCaretDown />
                           </span>
                           <div className="dropdown-content">
-                            <p>
-                              <button><a href="#">View</a></button>
-                            </p>
+                            <p><button><a href="/ClassesView">View</a></button></p>
                             <p>
                               <button><a href="#">Edit</a></button>
                             </p>
                             <p>
-                              <button><a href="#">View Grade</a></button>
+                              <button><a href="#">Archieve</a></button>
                             </p>
                           </div>
                         </div>
@@ -242,12 +212,9 @@ const StudentCreateNew = () => {
 
                     <tr>
                       <td>8</td>
-                      <td className="td-block">Temporary</td>
-                      <td className="td-block">4280017150035</td>
-                      <td>Del Monte</td>
-                      <td className="td-block-fn">Rain Luke</td>
-                      <td className="td-block">N/A</td>
-                      <td className="td-block">2021-11-02</td>
+                      <td >A</td>
+                      <td >Grade 2</td>
+                      <td className="td-block-fn">Active</td>
                       <td className="t-center">
                         <div className="dropdown">
                           <span>
@@ -255,14 +222,12 @@ const StudentCreateNew = () => {
                             <FaCaretDown />
                           </span>
                           <div className="dropdown-content">
-                            <p>
-                              <button><a href="#">View</a></button>
-                            </p>
+                            <p><button><a href="/ClassesView">View</a></button></p>
                             <p>
                               <button><a href="#">Edit</a></button>
                             </p>
                             <p>
-                              <button><a href="#">View Grade</a></button>
+                              <button><a href="#">Archieve</a></button>
                             </p>
                           </div>
                         </div>
@@ -271,12 +236,9 @@ const StudentCreateNew = () => {
 
                     <tr>
                       <td>9</td>
-                      <td className="td-block">Temporary</td>
-                      <td className="td-block">4280017150035</td>
-                      <td>Del Monte</td>
-                      <td className="td-block-fn">Rain Luke</td>
-                      <td className="td-block">N/A</td>
-                      <td className="td-block">2021-11-02</td>
+                      <td >A</td>
+                      <td >Grade 2</td>
+                      <td className="td-block-fn">Active</td>
                       <td className="t-center">
                         <div className="dropdown">
                           <span>
@@ -284,14 +246,12 @@ const StudentCreateNew = () => {
                             <FaCaretDown />
                           </span>
                           <div className="dropdown-content">
-                            <p>
-                              <button><a href="#">View</a></button>
-                            </p>
+                            <p><button><a href="/ClassesView">View</a></button></p>
                             <p>
                               <button><a href="#">Edit</a></button>
                             </p>
                             <p>
-                              <button><a href="#">View Grade</a></button>
+                              <button><a href="#">Archieve</a></button>
                             </p>
                           </div>
                         </div>
@@ -300,12 +260,9 @@ const StudentCreateNew = () => {
 
                     <tr>
                       <td>10</td>
-                      <td className="td-block">Temporary</td>
-                      <td className="td-block">4280017150035</td>
-                      <td>Del Monte</td>
-                      <td className="td-block-fn">Rain Luke</td>
-                      <td className="td-block">N/A</td>
-                      <td className="td-block">2021-11-02</td>
+                      <td >A</td>
+                      <td >Grade 2</td>
+                      <td className="td-block-fn">Active</td>
                       <td className="t-center">
                         <div className="dropdown">
                           <span>
@@ -313,33 +270,122 @@ const StudentCreateNew = () => {
                             <FaCaretDown />
                           </span>
                           <div className="dropdown-content">
-                            <p>
-                              <button><a href="#">View</a></button>
-                            </p>
+                            <p><button><a href="/ClassesView">View</a></button></p>
                             <p>
                               <button><a href="#">Edit</a></button>
                             </p>
                             <p>
-                              <button><a href="#">View Grade</a></button>
+                              <button><a href="#">Archieve</a></button>
                             </p>
                           </div>
                         </div>
                       </td>
                     </tr>
+
+                    <tr>
+                      <td>11</td>
+                      <td >A</td>
+                      <td >Grade 2</td>
+                      <td className="td-block-fn">Active</td>
+                      <td className="t-center">
+                        <div className="dropdown">
+                          <span>
+                            <FaCog />
+                            <FaCaretDown />
+                          </span>
+                          <div className="dropdown-content">
+                            <p><button><a href="/ClassesView">View</a></button></p>
+                            <p>
+                              <button><a href="#">Edit</a></button>
+                            </p>
+                            <p>
+                              <button><a href="#">Archieve</a></button>
+                            </p>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>12</td>
+                      <td >A</td>
+                      <td >Grade 2</td>
+                      <td className="td-block-fn">Active</td>
+                      <td className="t-center">
+                        <div className="dropdown">
+                          <span>
+                            <FaCog />
+                            <FaCaretDown />
+                          </span>
+                          <div className="dropdown-content">
+                            <p><button><a href="/ClassesView">View</a></button></p>
+                            <p>
+                              <button><a href="#">Edit</a></button>
+                            </p>
+                            <p>
+                              <button><a href="#">Archieve</a></button>
+                            </p>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>13</td>
+                      <td >A</td>
+                      <td >Grade 2</td>
+                      <td className="td-block-fn">Active</td>
+                      <td className="t-center">
+                        <div className="dropdown">
+                          <span>
+                            <FaCog />
+                            <FaCaretDown />
+                          </span>
+                          <div className="dropdown-content">
+                            <p><button><a href="/ClassesView">View</a></button></p>
+                            <p>
+                              <button><a href="#">Edit</a></button>
+                            </p>
+                            <p>
+                              <button><a href="#">Archieve</a></button>
+                            </p>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>14</td>
+                      <td >A</td>
+                      <td >Grade 2</td>
+                      <td className="td-block-fn">Active</td>
+                      <td className="t-center">
+                        <div className="dropdown">
+                          <span>
+                            <FaCog />
+                            <FaCaretDown />
+                          </span>
+                          <div className="dropdown-content">
+                            <p><button><a href="/ClassesView">View</a></button></p>
+                            <p>
+                              <button><a href="#">Edit</a></button>
+                            </p>
+                            <p>
+                              <button><a href="#">Archieve</a></button>
+                            </p>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    
                   </table>
 
                 </div>
               </div>
-                  <div className="student-input margin-top20 button-showmore">
-                    <div className="student-input__wrapper margin-bottom20">
-                      <div className="studentinfo-button">
-                        <button> Show More</button>
-                      </div>
-                    </div>
-                  </div>
             </div>
         </div>
       </div>
+      
       <div className="hide-nav">
       <div className="sidenavigation width12 height100">
       <SideNavigation /></div>
@@ -349,4 +395,4 @@ const StudentCreateNew = () => {
   );
 };
 
-export default StudentCreateNew;
+export default SettingClassLevel;

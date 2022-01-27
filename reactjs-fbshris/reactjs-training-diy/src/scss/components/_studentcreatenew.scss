@@ -1,9 +1,8 @@
 .studentlist {
-  background-color: #fff;
+  margin: 2rem 2rem;
   &__wrapper {
     table {
       width: 100%;
-      margin: 0 auto;
       background-color: #fff;
 
       tr {
@@ -16,7 +15,21 @@
         td {
           border: 1px solid $dark-gray;
         }
+        .td-block{
+          @media (max-width: 1290px) {
+            display: none;
+          }
+          
+        }
+        .td-block-fn{
+          @media (max-width: 425px) {
+            display: none;
+          }
+        }
       }
+      tr:hover{
+            background-color: lighten($black, 90%);
+          }
     }
   }
 }

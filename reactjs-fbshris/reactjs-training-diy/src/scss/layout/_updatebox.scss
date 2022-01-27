@@ -1,0 +1,26 @@
+.update-box{
+    background-color: $white;
+    padding: 2rem;
+
+    h2{
+        margin-bottom: 0.5rem;
+        
+        span{
+            font-family: "montserratextrabold";
+        }
+    }
+    
+    button{
+        margin-top: 1rem;
+        font-size: 1rem;
+        padding: 0.5rem 2rem;
+        cursor: pointer;
+        span{
+            margin-right: 5px;
+        }
+    }
+}
+
+.margintop30{
+    margin-top: 3rem;
+}

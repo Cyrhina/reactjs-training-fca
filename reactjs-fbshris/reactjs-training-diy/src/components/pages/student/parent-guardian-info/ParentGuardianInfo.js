@@ -8,7 +8,7 @@ const ParentGuardianInfo = () => {
     <>
       <div className="tab">
         <div className="studentbanner">
-          <h2>Parent or Guardian Information</h2>
+          <h5>Parent or Guardian Information</h5>
         </div>
         <form>
           <div className="student-input">
@@ -19,18 +19,21 @@ const ParentGuardianInfo = () => {
               </div>
               <div className="inputform bottom">
                 <div className="inputgender">
+                  <div>
                   <label className="inputgender">
                     <input type="radio" name="radio" />
                     Biological or adoptive mother
-                  </label>
+                  </label></div>
+                  <div>
                   <label className="inputgender">
                     <input type="radio" name="radio" />
                     Step-Mother
-                  </label>
+                  </label></div>
+                  <div>
                   <label className="inputgender">
                     <input type="radio" name="radio" />
                     Other
-                  </label>
+                  </label></div>
                 </div>
               </div>
               <div className="inputform">
@@ -362,6 +365,8 @@ const ParentGuardianInfo = () => {
           </div>
         </form>
       </div>
+
+      
     </>
   );
 };

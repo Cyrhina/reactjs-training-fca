@@ -4,13 +4,16 @@ import SideNavigation from "../../sidenavigation/SideNavigation";
 import LegalVerificaton from "./legalverification/LegalVerificaton";
 import ParentGuardianInfo from "./parent-guardian-info/ParentGuardianInfo";
 import StudentInfo from "./studentinfo/StudentInfo";
-import Banner from "../../banner/Banner";
 
 const Student = () => {
   return (
     <>
       <Header />
-      <Banner />
+      <div className="banner width88">
+        <div className="banner__wrapper">
+          <h1>Students: Alexander Obeda</h1>
+        </div>
+      </div>
       <div className="student-info-box width88">
         <div className="container95">
           <div className="student-info-box__wrapper">
@@ -38,7 +41,11 @@ const Student = () => {
           </div>
         </div>
       </div>
-      <SideNavigation />
+      
+      <div className="hide-nav">
+      <div className="sidenavigation width12 height100">
+      <SideNavigation /></div>
+      </div>
     </>
   );
 };

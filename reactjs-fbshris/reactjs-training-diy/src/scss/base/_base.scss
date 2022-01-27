@@ -1,6 +1,18 @@
+textarea{
+  width: 100%;
+}
+
+select, input{
+  width: 100%;
+  padding: 1rem;
+}
 a {
   padding: 1rem;
   cursor: pointer;
+}
+td{
+
+  padding: 1rem;
 }
 
 html {
@@ -17,7 +29,7 @@ body {
 
 button {
   background-color: $green-accent;
-  border: 1px solid #fff;
+  border: 1px solid $white;
   border-radius: 5px;
-  color: #fff;
+  color:$white;
 }

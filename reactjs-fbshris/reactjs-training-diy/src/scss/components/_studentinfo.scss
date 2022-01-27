@@ -6,25 +6,29 @@ form {
       align-items: center;
       justify-content: center;
       position: relative;
-
+.profile-img{
       img {
-        width: 10%;
+        width: 20rem;
         border-radius: 100%;
         border: 1rem solid $light-gray;
       }
+}
 
       span {
-        font-size: 2rem;
         padding: 1rem;
-        color: #fff;
+        color: $white;
         background-color: $blue-accent;
         border-radius: 100%;
         position: absolute;
-        left: calc(50% + 20px);
-        top: 60%;
+        left: calc(50% + 50px);
+        top: 70%;
       }
+      
     }
-
+h2{
+  font-size: 1.4rem;
+  margin: 1rem ;
+}
     h3 {
       margin-top: 1rem;
       color: darken($dark-gray, 30%);
@@ -32,48 +36,57 @@ form {
   }
   .student-input {
     padding: 1rem 0;
+    font-size: 1.4rem;
     &__wrapper {
       margin: 0 15rem;
 
       h2 {
         margin: 2rem 0 3rem 0;
-        font-size: 3rem;
-        line-height: 3rem;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
         text-transform: uppercase;
       }
       .inputform {
-        .inputname {
-          label {
-            font-size: 2rem;
-          }
-        }
+        font-size: 1.4rem;
+        //.inputname {
+         // label {
+         // }
+        //}
         .input {
           margin: 2rem 0;
           input {
-            padding: 2rem;
-            font-size: 2rem;
-            line-height: 2rem;
+            padding: 1rem;
             width: 100%;
           }
+          
           select {
-            padding: 2rem;
-            font-size: 2rem;
-            line-height: 2rem;
+            padding: 1rem;
             width: 100%;
           }
         }
-        .inputgender {
-          margin-top: 2rem;
-          margin-bottom: 2rem;
-          input {
-            margin-right: 2rem;
-          }
-          label {
-            margin-right: 2rem;
-          }
-        }
+        
+      }
+      
+      @media (max-width: 999px) {
+        margin:0 2rem;
+      }
+      
+      @media (max-width: 414px) {
+        margin:0 1.5rem;
       }
     }
+  }
+}
+
+.inputgender {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  input {
+    margin-right: 2rem;
+    width:unset;
+  }
+  label {
+    margin-right: 2rem;
   }
 }
 
@@ -94,7 +107,7 @@ form {
     padding: 1rem 5rem;
     text-align: center;
     background-color: $green-accent;
-    color: #fff;
+    color: $white;
     border: 1px solid $green-accent;
 
     span.margin-r-1rem {

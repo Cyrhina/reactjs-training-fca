@@ -1,10 +1,15 @@
-.active {
-  color: $green-accent;
-}
 
 .container95 {
   width: 95%;
   margin: 0 auto;
+}
+
+.height100{
+  //height: 100%;
+  min-height: 100vh;
+  position: fixed;
+
+  
 }
 
 .tab {
@@ -70,6 +75,10 @@
   padding: 2rem;
 }
 
+.padding1rem {
+  padding: 1rem;
+}
+
 .seacrchicon {
   padding: 1rem;
   border-radius: unset;
@@ -81,6 +90,10 @@
 }
 
 //color
+
+.bg-light-gray {
+  background-color: $dark-gray;
+}
 
 .bg-green {
   background-color: $green-accent;
@@ -98,10 +111,21 @@
   background-color: $yellow-warning;
 }
 
+.light-bg {
+  background-color: $light-bg;
+}
+
 .width88 {
-  width: 88%;
+  width: 84%;
+  
+
+  @media (max-width: 590px) {
+    width: 100%;
+}
+
 }
 
 .width12 {
-  width: 12%;
+  background-color: $primary-color;
+  width: 16%;
 }

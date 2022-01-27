@@ -31,3 +31,20 @@
 .grid-inline {
   display: inline-grid;
 }
+
+.column3{
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 3rem;
+  
+  @media (max-width: 1024px){
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2.5rem;
+  }
+  
+  @media (max-width: 590px){
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+  
+}
+

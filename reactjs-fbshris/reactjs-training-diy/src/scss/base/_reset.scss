@@ -89,7 +89,7 @@ td {
 }
 
 html {
-  font: 10px "montserratregular", sans-serif;
+  font: 62.5% "montserratregular", sans-serif;
   line-height: 16px;
   overflow-x: hidden;
 }
@@ -104,7 +104,7 @@ table {
 }
 
 table.no-hover tr:hover {
-  background: #fff;
+  background: $primary-color;
 }
 
 table.no-hover-primary tr:hover {
@@ -201,13 +201,13 @@ h6 {
 }
 
 h1 {
-  font-size: 2.5rem;
-  line-height: 3.5rem;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
 }
 
 h2 {
-  font-size: 2rem;
-  line-height: 3rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 h3 {

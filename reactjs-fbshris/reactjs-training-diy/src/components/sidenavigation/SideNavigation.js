@@ -9,7 +9,6 @@ import { FaClipboardList, FaClipboardCheck, FaUserCog } from "react-icons/fa";
 const SideNavigation = () => {
   return (
     <>
-      <div className="sidenavigation width12">
         <div className="sidenavigation__wrapper">
           <div className="logo">
             <img src={logo} alt="logo" />
@@ -21,23 +20,23 @@ const SideNavigation = () => {
           <nav>
             <ul>
               <li id="menu-page1">
-                <a href="/">
+                <a href="/Home">
                   <span>
                     <AiFillDashboard />
                   </span>
                   <h3>Dashboard</h3>
                 </a>
               </li>
-              <li id="menu-page2" className="active">
-                <a href="/">
+              <li id="menu-page2">
+                <a href="/StudentCreateNew">
                   <span>
                     <BsFillPersonFill />
                   </span>
                   <h3>Student</h3>
                 </a>
               </li>
-              <li id="menu-page3">
-                <a href="#">
+              <li id="menu-page3" >
+                <a href="/Classes">
                   <span>
                     <IoIosPeople />
                   </span>
@@ -76,8 +75,8 @@ const SideNavigation = () => {
                   <h3>Users</h3>
                 </a>
               </li>
-              <li id="menu-page7">
-                <a href="#">
+              <li id="menu-page7" className="active">
+                <a href="/">
                   <span>
                     <AiTwotoneSetting />
                   </span>
@@ -87,7 +86,6 @@ const SideNavigation = () => {
             </ul>
           </nav>
         </div>
-      </div>
     </>
   );
 };
