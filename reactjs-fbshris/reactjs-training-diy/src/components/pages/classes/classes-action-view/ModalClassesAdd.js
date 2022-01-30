@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { AiFillCheckCircle, AiOutlineClose } from "react-icons/ai";
 
-const ModalClassesAdd = () => {
+const ModalClassesAdd = ({ handleShow }) => {
+  const { isShow, setIsShow } = handleShow;
+
+  const handleClose = () => {
+    console.log("123123");
+  };
   return (
     <>
       <div className="modal">
@@ -11,11 +16,11 @@ const ModalClassesAdd = () => {
               <span>
                 <AiFillCheckCircle />
               </span>
-              <h4>New Class</h4>
+              <h4>New Classsssss</h4>
             </div>
-            <span>
+            <button onClick={() => handleClose()}>
               <AiOutlineClose />
-            </span>
+            </button>
           </div>
           <div className="bg--white modalbody">
             <div className="addform">
@@ -25,13 +30,13 @@ const ModalClassesAdd = () => {
                     <label>Class Level</label>
                   </div>
                   <div className="select-grade">
-                  <select name="position" id="dept">
-                    <option value="position1">--</option>
-                    <option value="position2">Grade 1</option>
-                    <option value="position3">Grade 2</option>
-                    <option value="position4">Grade 3</option>
-                  </select>
-                </div>
+                    <select name="position" id="dept">
+                      <option value="position1">--</option>
+                      <option value="position2">Grade 1</option>
+                      <option value="position3">Grade 2</option>
+                      <option value="position4">Grade 3</option>
+                    </select>
+                  </div>
                 </div>
 
                 <div className="inputaddform">
@@ -39,22 +44,22 @@ const ModalClassesAdd = () => {
                     <label>Section</label>
                   </div>
                   <div className="select-grade">
-                  <select name="position" id="dept">
-                    <option value="position1">--</option>
-                    <option value="position2">Donna Palomera</option>
-                    <option value="position3">Donna Palomera</option>
-                    <option value="position4">Donna Palomera</option>
-                  </select>
-                </div>
+                    <select name="position" id="dept">
+                      <option value="position1">--</option>
+                      <option value="position2">Donna Palomera</option>
+                      <option value="position3">Donna Palomera</option>
+                      <option value="position4">Donna Palomera</option>
+                    </select>
+                  </div>
                 </div>
 
                 <div className="inputaddform">
                   <div className="inputaddname">
                     <label>Capacity</label>
                   </div>
-                <div className="input">
-                  <input type="type" required />
-                </div>
+                  <div className="input">
+                    <input type="type" required />
+                  </div>
                 </div>
 
                 <div className="inputaddform">
@@ -62,21 +67,26 @@ const ModalClassesAdd = () => {
                     <label>Rooms</label>
                   </div>
                   <div className="select-grade">
-                  <select name="position" id="dept">
-                    <option value="position1">--</option>
-                    <option value="position2">201</option>
-                    <option value="position3">202</option>
-                    <option value="position4">303</option>
-                  </select>
-                </div>
+                    <select name="position" id="dept">
+                      <option value="position1">--</option>
+                      <option value="position2">201</option>
+                      <option value="position3">202</option>
+                      <option value="position4">303</option>
+                    </select>
+                  </div>
                 </div>
               </form>
             </div>
           </div>
           <div>
             <div className="button-container">
-              <button className="bg-green padding1rem">Create</button>
-              <button className="bg-light-gray padding1rem">Cancel</button>
+              <button className="bg-green btn">Createsss</button>
+              <button
+                className="bg-light-gray btn"
+                onClick={() => handleClose()}
+              >
+                Cancel
+              </button>
             </div>
           </div>
         </div>

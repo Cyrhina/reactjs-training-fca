@@ -11,7 +11,7 @@
     color: $white;
     font-weight: bold;
     transition: background ease 0.2s;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     border-top: 2px solid $primary-color;
     position: relative;
     text-transform: uppercase;
@@ -30,14 +30,13 @@
     display: none;
     padding: 30px;
     background: $white;
-    
-  @media (max-width: 414px) {
-    padding: unset;
-    
-  }
-  h5{
-    font-family: "montserratextrabold";
-  }
+
+    @media (max-width: 414px) {
+      padding: unset;
+    }
+    h5 {
+      font-family: "montserratextrabold";
+    }
   }
 
   input[type="radio"] {

@@ -1,18 +1,15 @@
-textarea{
+textarea {
   width: 100%;
 }
 
-select, input{
+select,
+input {
   width: 100%;
   padding: 1rem;
 }
 a {
   padding: 1rem;
   cursor: pointer;
-}
-td{
-
-  padding: 1rem;
 }
 
 html {
@@ -31,5 +28,5 @@ button {
   background-color: $green-accent;
   border: 1px solid $white;
   border-radius: 5px;
-  color:$white;
+  color: $white;
 }

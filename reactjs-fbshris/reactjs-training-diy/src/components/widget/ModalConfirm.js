@@ -1,5 +1,6 @@
 import React from "react";
 import { AiFillCheckCircle, AiOutlineClose } from "react-icons/ai";
+import SpinnerButton from "./SpinnerButton";
 
 const ModalConfirm = () => {
   return (
@@ -27,8 +28,11 @@ const ModalConfirm = () => {
           </div>
           <div>
             <div className="button-container">
-              <button className="btn bg-warning padding1rem">Okey</button>
-              <button className="btn bg-warning padding1rem">Cancel</button>
+              <button className="btn bg-warning">
+                <SpinnerButton />
+                Okey
+              </button>
+              <button className="btn bg-warning">Cancel</button>
             </div>
           </div>
         </div>

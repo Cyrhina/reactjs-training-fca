@@ -1,6 +1,7 @@
 import React from "react";
 import { AiFillCheckCircle, AiOutlineClose } from "react-icons/ai";
 import { GrDocument } from "react-icons/gr";
+import SpinnerButton from "../../../widget/SpinnerButton";
 
 const ModalAddTeacher = () => {
   return (
@@ -26,47 +27,49 @@ const ModalAddTeacher = () => {
                     <label>Status</label>
                   </div>
                   <div className="select-grade">
-                  <select name="position" id="dept">
-                    <option value="position1">Active</option>
-                    <option value="position2">Off Active</option>
-                  </select>
+                    <select name="position" id="dept">
+                      <option value="position1">Active</option>
+                      <option value="position2">Off Active</option>
+                    </select>
+                  </div>
                 </div>
-                </div>
-                
+
                 <div className="inputaddform">
                   <div className="inputaddname">
                     <label>First Name</label>
                   </div>
-                <div className="input">
-                  <input type="type" required />
+                  <div className="input">
+                    <input type="type" required />
+                  </div>
                 </div>
-                </div>
-                
+
                 <div className="inputaddform">
                   <div className="inputaddname">
                     <label>Last Name</label>
                   </div>
-                <div className="input">
-                  <input type="type" required />
+                  <div className="input">
+                    <input type="type" required />
+                  </div>
                 </div>
-                </div>
-                
+
                 <div className="inputaddform">
                   <div className="inputaddname">
                     <label>Degree</label>
                   </div>
-                <div className="input">
-                  <input type="type" required />
+                  <div className="input">
+                    <input type="type" required />
+                  </div>
                 </div>
-                </div>
-
               </form>
             </div>
           </div>
           <div>
             <div className="button-container">
-              <button className="bg-green padding1rem">Add</button>
-              <button className="bg-light-gray padding1rem">Cancel</button>
+              <button className="bg-green btn">Add</button>
+              <button className="bg-light-gray btn">
+                Cancel
+                {/* <SpinnerButton /> */}
+              </button>
             </div>
           </div>
         </div>

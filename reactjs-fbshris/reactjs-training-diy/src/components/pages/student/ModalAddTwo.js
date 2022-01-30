@@ -1,10 +1,11 @@
 import React from "react";
 import { AiFillCheckCircle, AiOutlineClose } from "react-icons/ai";
+import SpinnerButton from "../../widget/SpinnerButton";
 
 const ModalAddTwo = () => {
   return (
     <>
-      <div className="modal ">
+      <div className="modal">
         <div className="display-center">
           <div className="modal-title bg-green">
             <div className="modal-title__wrapper">
@@ -17,7 +18,7 @@ const ModalAddTwo = () => {
               <AiOutlineClose />
             </span>
           </div>
-          <div className="bg--white modalbody">
+          <div className="bg--white">
             <div className="addform">
               <form>
                 <div className="inputaddform">
@@ -67,8 +68,12 @@ const ModalAddTwo = () => {
           </div>
           <div>
             <div className="button-container">
-              <button className="btn bg-green padding1rem">Add</button>
-              <button className="btn bg-green padding1rem">Cancel</button>
+              <button className="btn bg-green ">
+                Add <SpinnerButton />
+              </button>
+              <button className="btn bg-green">
+                Cancel <SpinnerButton />
+              </button>
             </div>
           </div>
         </div>

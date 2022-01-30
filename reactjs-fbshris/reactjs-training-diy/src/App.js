@@ -19,18 +19,26 @@ const App = () => {
     <div>
       <Router>
         <Routes>
-          <Route exact path="/Home" element={<Home />} />
-          <Route exact path="/StudentCreateNew" element={<StudentCreateNew />} />
+          <Route exact path="/" element={<Home />} />
+          <Route
+            exact
+            path="/StudentCreateNew"
+            element={<StudentCreateNew />}
+          />
           <Route exact path="/Student" element={<Student />} />
           <Route exact path="/Classes" element={<Classes />} />
           <Route exact path="/ClassesView" element={<ClassesView />} />
-          <Route exact path="/" element={<Setting />} />
-          <Route exact path="/SettingClassLevel" element={<SettingClassLevel />} />
+          <Route exact path="/Setting" element={<Setting />} />
+          <Route
+            exact
+            path="/SettingClassLevel"
+            element={<SettingClassLevel />}
+          />
           <Route exact path="/SettingTeacher" element={<SettingTeacher />} />
           <Route exact path="/SettingSection" element={<SettingSection />} />
           <Route exact path="/SettingRoom" element={<SettingRoom />} />
           <Route exact path="/SettingSubject" element={<SettingSubject />} />
-          <Route exact path="/SettingRole" element={<SettingRole/>} />
+          <Route exact path="/SettingRole" element={<SettingRole />} />
         </Routes>
       </Router>
     </div>

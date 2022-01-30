@@ -1,15 +1,12 @@
-
 .container95 {
   width: 95%;
   margin: 0 auto;
 }
 
-.height100{
+.height100 {
   //height: 100%;
   min-height: 100vh;
   position: fixed;
-
-  
 }
 
 .tab {
@@ -67,6 +64,10 @@
   margin-left: 4rem;
 }
 
+.margin-right40 {
+  margin-right: 4rem;
+}
+
 .margin-top20 {
   margin-top: 2rem;
 }
@@ -77,6 +78,10 @@
 
 .padding1rem {
   padding: 1rem;
+}
+
+.btn-padding {
+  padding: 1rem 3rem;
 }
 
 .seacrchicon {
@@ -117,12 +122,10 @@
 
 .width88 {
   width: 84%;
-  
 
   @media (max-width: 590px) {
     width: 100%;
-}
-
+  }
 }
 
 .width12 {

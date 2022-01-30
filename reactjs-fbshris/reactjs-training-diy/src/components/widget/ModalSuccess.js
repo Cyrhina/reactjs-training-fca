@@ -1,5 +1,6 @@
 import React from "react";
 import { AiFillCheckCircle } from "react-icons/ai";
+import SpinnerButton from "./SpinnerButton";
 
 const ModalSuccess = () => {
   return (
@@ -23,7 +24,9 @@ const ModalSuccess = () => {
             </h4>
           </div>
           <div className="button-container">
-            <button className="btn bg-green padding1rem">Okey</button>
+            <button className="btn bg-green">
+              Okey <SpinnerButton />
+            </button>
           </div>
         </div>
       </div>

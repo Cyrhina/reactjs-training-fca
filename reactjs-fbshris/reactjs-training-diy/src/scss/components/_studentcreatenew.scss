@@ -9,27 +9,26 @@
         th {
           border: 1px solid $dark-gray;
           background-color: lighten($dark-gray, 10%);
-          padding: 2rem;
+          padding: 1.5rem;
         }
 
         td {
           border: 1px solid $dark-gray;
         }
-        .td-block{
+        .td-block {
           @media (max-width: 1290px) {
             display: none;
           }
-          
         }
-        .td-block-fn{
+        .td-block-fn {
           @media (max-width: 425px) {
             display: none;
           }
         }
       }
-      tr:hover{
-            background-color: lighten($black, 90%);
-          }
+      tr:hover {
+        background-color: lighten($black, 90%);
+      }
     }
   }
 }

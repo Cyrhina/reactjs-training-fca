@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import personone from "../../img/jhonny.png";
 import logoone from "../../img/logo.png";
 import { FiLogOut } from "react-icons/fi";
@@ -10,6 +10,9 @@ import { IoIosPeople } from "react-icons/io";
 import SideNavigation from "../sidenavigation/SideNavigation";
 
 const Header = () => {
+  const [isShow, setIsShow] = useState(false);
+
+  const handleShow = () => setIsShow(!isShow)
   return (
     <>
       <header className="header width88">
@@ -20,7 +23,7 @@ const Header = () => {
                 School Year:
                 <span>2022-2023</span>
               </h2>
-                <div className="logo">
+              <div className="logo">
                 <img src={logoone} alt="profile-picture" />
               </div>
             </div>
@@ -33,28 +36,31 @@ const Header = () => {
                 <img src={personone} alt="profile-picture" />
               </div>
               <div className="logout">
-                <a href="/ModalSuccess">
+                <a href="/">
                   <FiLogOut />
                 </a>
               </div>
-              
-              <div id="burger-nav" className="burger-button">
 
-                          <span>
-                            <GiHamburgerMenu />
-                          </span>                          
-                </div>
+              <div id="burger-nav" className= "burger-button" onClick={() => handleShow()}>
+                <span>
+                  <GiHamburgerMenu />
+                </span>
+              </div>
             </div>
           </div>
         </div>
-      <div className="hide-nav-header">
-        <div className="sidenavigation height100">
-      <SideNavigation />
-      </div>
-      </div>
-        
 
-              </header>
+    {
+      isShow && 
+      <div className="hide-nav-header">
+          <div className="sidenavigation height100">
+            <SideNavigation />
+          </div>
+        </div>
+
+    }
+        
+      </header>
     </>
   );
 };

@@ -1,8 +1,8 @@
-
-import React from "react";
+import React, {useState} from "react";
 import { FaCaretDown, FaCog } from "react-icons/fa";
 
 const ClassesTable = () => {
+
   return (
     <>
       <div className="student-info-box width88 ">
@@ -37,7 +37,7 @@ const ClassesTable = () => {
                           <div className="dropdown-content">
                             <p><button><a href="/ClassesView">View</a></button></p>
                             <p>
-                              <button><a href="#">Edit</a></button>
+                              <button  >Edit </button>
                             </p>
                             <p>
                               <button><a href="#">Archieve</a></button>

@@ -7,8 +7,8 @@
       padding: 1.5rem;
       img {
         width: 23rem;
-      display: block;
-      margin: 0 auto;
+        display: block;
+        margin: 0 auto;
       }
       @media (max-width: 1440px) {
         padding: 2.1rem;
@@ -23,14 +23,14 @@
       img {
         width: 9.8rem;
         padding: 2rem;
-      display: none;
-      margin: 0 auto;
-      @media (max-width: 1149px) {
-        display: block;
-      }
-      @media (max-width: 768px) {
-        padding: 0.9rem;
-      }
+        display: none;
+        margin: 0 auto;
+        @media (max-width: 1149px) {
+          display: block;
+        }
+        @media (max-width: 768px) {
+          padding: 0.9rem;
+        }
       }
       @media (max-width: 1149px) {
         display: block;
@@ -44,7 +44,7 @@
         display: flex;
         align-items: center;
         font-family: "montserratregular";
-        padding: 2rem 0;
+        padding: 1rem 0;
         cursor: pointer;
         font-size: 1.4rem;
         span {
@@ -67,13 +67,12 @@
           justify-content: center;
           width: 100%;
         }
-       
-       @media (max-width: 426px) {
-         justify-content: unset;
-         width: unset;
+
+        @media (max-width: 426px) {
+          justify-content: unset;
+          width: unset;
+        }
       }
-      }
-       
     }
     .active {
       background-color: $light-bg;
@@ -84,24 +83,24 @@
     }
   }
   @media (max-width: 426px) {
-    display: block;
+    // display: block;
     position: unset;
-}
+  }
 }
 
-.hide-nav{
+.hide-nav {
   @media (max-width: 590px) {
     display: none;
+  }
 }
-}
-.hide-nav-header{
+.hide-nav-header {
   display: none;
-  
-@media (max-width: 425px) {
-  display: block;
-  min-height: 100vh;
-  width: 100%;
-  position: fixed;
-  z-index: 999999;
-}
+
+  @media (max-width: 425px) {
+    display: block;
+    min-height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 999999;
+  }
 }

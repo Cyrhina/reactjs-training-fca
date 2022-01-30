@@ -9,7 +9,7 @@
 
 .spinner {
   background: rgba(255, 255, 255, 0.5);
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   bottom: 0;
@@ -66,7 +66,7 @@
     margin: 0 auto;
     position: absolute;
     top: 50%;
-    right: 30%;
+    right: 40%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }

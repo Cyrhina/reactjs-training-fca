@@ -11,9 +11,9 @@
     h1 {
       font-size: 1.8rem;
       font-family: "montserratextrabold";
-@media (max-width: 414px) {
-  font-size: 1rem;
-}
+      @media (max-width: 414px) {
+        font-size: 1rem;
+      }
     }
   }
   @media (max-width: 414px) {
@@ -21,7 +21,6 @@
   }
 }
 
-  
 .searchbanner {
   background-color: $white;
   float: right;
@@ -54,7 +53,7 @@
           align-items: center;
           justify-content: center;
 
-          span{
+          span {
             margin-right: 5px;
           }
         }
@@ -68,26 +67,24 @@
     }
     @media (max-width: 1062px) {
       display: block;
-      
     }
   }
 }
 
-
-.searchbar-box{
+.searchbar-box {
   display: flex;
   justify-content: space-between;
   width: 70%;
- .search-recomen {
-  position: relative;
-  display: inline-block;
-  text-align: center;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  vertical-align: middle;
-  line-height: 1rem;
-  min-width: 100%;
-  border: 1px solid $light-gray;
+  .search-recomen {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    vertical-align: middle;
+    line-height: 1rem;
+    min-width: 100%;
+    border: 1px solid $light-gray;
 
     span i {
       color: $light-gray;
@@ -95,58 +92,49 @@
     span svg {
       fill: $white;
     }
-  
-  span i,
-  span svg {
-    margin: 0 3px;
-    font-size: 15px;
-  }
 
-  .search-recomen-change {
-    height: 30px;
-    display: inline-block;
-    position: fixed;
-    width: 30px;
-    left: 0;
-    top: 0;
-    text-align: center;
-    padding: 6px 5px;
-  }
-  .search-recomen-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 100%;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    z-index: 1;
-    right: 0;
-
-    &:hover {
-      background: $light-bg;
-    }
-    p {
-      margin: 0;
+    span i,
+    span svg {
+      margin: 0 3px;
+      font-size: 15px;
     }
 
-    p:hover {
-      background: #ddd;
-    }
-
-    p option {
-      padding: 10px 8px;
-      margin: 0;
-      display: block;
-      color: #3a3b36;
-      background: $white;
+    .search-recomen-content {
+      //display: block;
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 100%;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
       text-align: center;
-      width: 100%;
+      z-index: 1;
+      right: 0;
+
       &:hover {
-        background: #e0e0e0;
+        background: $light-bg;
+      }
+      p {
+        margin: 0;
+      }
+
+      p:hover {
+        background: #ddd;
+      }
+
+      p option {
+        padding: 10px 8px;
+        margin: 0;
+        display: block;
+        color: #3a3b36;
+        background: $white;
+        text-align: center;
+        width: 100%;
+        &:hover {
+          background: #e0e0e0;
+        }
       }
     }
   }
-}
 
   @media (max-width: 1062px) {
     margin-bottom: 0.5rem;
@@ -167,13 +155,11 @@
     margin-bottom: 0.5rem;
     width: 92%;
   }
-  
-
 }
-.search-recomen:hover .search-recomen-content,
-.search-recomen:active .search-recomen-content {
-  display: block;
-}
+// .search-recomen:hover .search-recomen-content,
+// .search-recomen:active .search-recomen-content {
+//   display: block;
+// }
 
 .search-recomen-select {
   position: relative;
